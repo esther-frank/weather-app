@@ -45,7 +45,8 @@ export default function WeatherPage() {
         setWeather(response.data)
         setLoading(true)
         setError('')
-      } catch {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      } catch (err) {
         setError(
           'Could not fetch weather data from geolocation. Please try again.'
         )
