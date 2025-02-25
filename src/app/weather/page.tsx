@@ -45,7 +45,7 @@ export default function WeatherPage() {
         setWeather(response.data)
         setLoading(true)
         setError('')
-      } catch (err) {
+      } catch {
         setError(
           'Could not fetch weather data from geolocation. Please try again.'
         )
